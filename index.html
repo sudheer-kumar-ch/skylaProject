@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>myFirstProject</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <div id="homePage"> <!--HOME BG CONTAINER-->
+      
+      <div id="homeSectionOne" class="pt-3 pl-5 pr-5 d-flex flex-row space-between"><!--TOP NAV CONTAINER-->
+        <div class="d-flex flex-row"><!--TOP NAV FIRST THREE-->
+        <div id="homeIcon" class="skyla-icon-container"> <!--HOME ICON & SKYLA CONTAINER-->
+          <div class="home-icon"> <!--HOME ICON C-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+          </svg>
+        </div> 
+          <h1 class="skyla">Skyla</h1>
+        </div>
+       <div class="d-flex flex-row email-container"><!--EMAIL CONTAINER-->
+        <div class="email-icon pr-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+          </svg>
+        </div>
+        <a href="mailto:enquiry@skyla.co" src="https://www.stayatskyla.com/assets/img/envelop.png" class="email-text">Enquiry@skyla.com</a>
+       </div>
+       <div class="d-flex flex-row email-container"><!--CONTACE CONTAINER-->
+        <div class="email-icon pr-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+        </div>
+        <a href="tell:+91 9985612828" src="https://www.stayatskyla.com/assets/img/ph.png" class="email-text">+91 9985612828</a>
+       </div>
+      </div><!--TOP NAV FIRST THREE END-->
+
+      <div class="d-flex flex-row"><!--TOP NAV LAST FOUR-->
+        
+        <a href="#findStaySection" id="findStay" class="email-text email-container" >Find a Stay</a>
+        <!---->
+        <div class="dropdown show email-container">
+          <a class="email-text " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Locations
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a id="kondapurItem" class="dropdown-item hover-text" href="#">Kondapur</a>
+            <a id="jubileeHillsItem" class="dropdown-item hover-text" href="#">Jubilee Hills</a>
+            <a id="hitechCityItem" class="dropdown-item hover-text" href="#">Hitech City</a>
+            <a id="banjaraHillsItem" class="dropdown-item hover-text" href="#">Banjara Hills</a>
+            <a id="gachibowliItem" class="dropdown-item hover-text" href="#">Gachibowli</a>
+          </div>
+        </div>
+        <!---->
+        <!---->
+        <div class="dropdown show email-container">
+          <a class="email-text " href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Why Skyla
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+            <a id="aboutSkylaItem" class="dropdown-item hover-text" href="#">About Skyla</a>
+            <a id="corporateStaysItem" class="dropdown-item hover-text" href="#">Corporates Stays</a>
+            <a id="galleryItem" class="dropdown-item hover-text" href="#">Gallery</a>
+            <a id="skylaReviewsItem" class="dropdown-item hover-text" target="_blank" href="https://www.google.com/travel/hotels/entity/CgoIlPeT8ITbs8NZEAE/reviews?g2lb=2502548%2C4258168%2C4270442%2C4271060%2C4306835%2C4317915%2C4322823%2C4328159%2C4371334%2C4401769%2C4419364%2C4425458%2C4428793%2C4433754%2C4436127%2C4444000%2C4444972%2C4270859%2C4284970%2C4291517%2C4412693&hl=en&gl=in&un=1&rp=EJT3k_CE27PDWRCU95PwhNuzw1k4AkAASAHAAQI&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwig14mbzcWIAxUAAAAAHQAAAAAQBA&ts=CAEaSQorEicyJTB4M2JjYjkxYThiZDhmMTAyZDoweDU5ODZjZWQ4NGUwNGZiOTQaABIaEhQKBwjoDxAJGA8SBwjoDxAJGBAYATICEAAqCQoFOgNJTlIaAA">
+              Skyla Reviews</a>
+          </div>
+        </div>
+        <!---->
+        <p class="email-text email-container">Support</p>
+      </div><!--TOP NAV LAST FOUR END-->
+      </div><!--TOP NAV CONTAINER END-->
+
+      <div id="homeSectionTwo"><!--HOME MIDDLE DESCRIPTION CONTAINER-->
+      <div class="pt-3 pl-5 pr-5"> <!--HOME TOP BG-->
+      <div class="bg-image"><!--HOME BG IMAGE CONTAINER-->
+        <p class="home-bg-image-para1">Premium Serviced Apartments, Studios, and Suites in Hyderabad's Prime Locations</p>
+        <p class="home-bg-image-para2">Purposefully designed spaces with round-the-clock service, cooking, and laundry facilities.</p>
+      
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-row inputs-bg-container"><!--HOME BG IMAGE INPUTS BG CONTAINER-->
+            <!--LOCATION INPUTS-->
+            <div class="d-flex flex-column">
+              <label for="setLocation" class="label-text">Select Location</label>
+              <select id="setLocation" class="form-control input-icon">
+                <option>Select Location</option>
+                <option value="Kondapur" selected>Kondapur</option>
+                <option value="Jubilee Hills">Jubilee Hills</option>
+                <option value="Hitech City">Hitech City</option>
+                <option value="Banjara Hills">Banjara Hills</option>
+                <option value="Gachibowli">Gachibowli</option>
+              </select>
+            </div>
+            <!--LOCATION INPUTS END-->
+
+            <!--SELECT STAY TYPE INPUTS-->
+            <div class="d-flex flex-column">
+              <label for="status" class="label-text">Select Stay Type</label>
+              <select id="status" class="form-control input-icon2">
+                <option>Select Location</option>
+                <option value="Select Stay Typer" selected>Select Stay Type</option>
+                <option value="Premier Room">Premier Room</option>
+                <option value="One-bedroom Suite">One-bedroom Suite</option>
+                <option value="Two-bedroom Suite">Two-bedroom Suite</option>
+                <option value="Three-bedroom Apartment">Three-bedroom Apartment</option>
+                <option value="Four-bedroom Apartment">Four-bedroom Apartment</option>
+                <option value="Studio Exclusive">Studio Exclusive</option>
+                <option value="One-bedroom Suite Supreme">One-bedroom Suite Supreme</option>
+                <option value="Studio Supreme">Studio Supreme</option>
+                <option value="Excecutive Room">Excecutive Room</option>
+              </select>
+            </div>
+            <!--SELECT STAY TYPE INPUTS END-->
+            <div class="d-flex flex-column">
+            <label for="selectDate" class="label-text">Check In - Check Out</label>    
+              <input id="selectDate" type="date" class="input-icon3"  value="2024-09-16"></input>
+            </div>
+            <div class="d-flex flex-column">
+              <label for="members" class="label-text">Guests</label>
+              <input id="members" type="text" class="input-icon4" value placeholder="Room1 - Adult1 - 0Child"></input>
+            </div>
+            <button class="input-button">Find <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg></span></button>
+          </div><!--HOME BG IMAGE INPUTS BG CONTAINER END-->
+        </div>
+
+      </div><!--HOME BG IMAGE CONTAINER END-->
+
+      <h2 class="view-locations-heading">A collection of properties at hand-picked locations in Hyderabad to balance your work, life, and travel needs.</h2>
+      <div class="d-flex flex-row justify-content-center">
+        <p class="view-locations-para1">KONDAPUR</p>
+        <p class="view-locations-para2">JUBILEE HILLS</p>
+        <p class="view-locations-para2">HITECH CITY</p>
+        <p class="view-locations-para2">BANJARA HILLS</p>
+        <p class="view-locations-para2">GACHIBOWLI</p>
+      </div>
+      <div class="d-flex flex-row locations-cards-container"><!--VIEW LOCATIONS IMAGES AND DESCRIPTION CARDS-->
+        <div class="kondapur-card1-border"><!--KONDAPUR CARD1-->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckNogMdC4Mr1lPnOzcEpqVqnkQwjjIh_MUA&s" class="kondapur-card1-image"/>
+          <p class="kondapur-card1-para1">Skyla Studios & Suites, Kothaguda, Kondapur |...</p>
+          <p class="kondapur-card1-para2">Premier Room in Hyderabad - Skyla...</p>
+          <p class="kondapur-card1-para3">Premium executive rooms in Hyderabad at Aptly. All executive rooms at our serviced apartments are...</p>
+        </div>
+        <div class="kondapur-card1-border ml-2"><!--KONDAPUR CARD2-->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_s5GKU9c4rJ8vJ_fC7O_nnfDkJ6_OpSRgA&s" class="kondapur-card1-image"/>
+          <p class="kondapur-card1-para1">Skyla Studios & Suites, Kothaguda, Kondapur |...</p>
+          <p class="kondapur-card1-para2">Premier Room in Hyderabad - Skyla...</p>
+          <p class="kondapur-card1-para3">Premium executive rooms in Hyderabad at Aptly. All executive rooms at our serviced apartments are...</p>
+        </div>
+        <div class="kondapur-card1-border ml-2"><!--KONDAPUR CARD3-->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEy9HN1juERu0o2qLjaKv_ywthcbiZrPeKpA&s" class="kondapur-card1-image"/>
+          <p class="kondapur-card1-para1">Skyla Studios & Suites, Kothaguda, Kondapur |...</p>
+          <p class="kondapur-card1-para2">Premier Room in Hyderabad - Skyla...</p>
+          <p class="kondapur-card1-para3">Premium executive rooms in Hyderabad at Aptly. All executive rooms at our serviced apartments are...</p>
+        </div>
+      </div><!--VIEW LOCATIONS IMAGES AND DESCRIPTION CARDS END-->
+    </div><!--HOME TOP BG END-->
+
+    <div class="d-flex flex-row home-middle-full-width-container"><!--HOME MIDDLE FULL WIDTH CONTAINER-->
+      <img src="https://media.designcafe.com/wp-content/uploads/2020/04/07174357/bedroom-colour-combination-with-burnt-orange-and-purple-1-768x512.jpg" 
+      class="home-middle-full-width-container-image"/>
+      <div class="home-middle-full-width-container-description-container"><!--home-middle-full-width-container-description-container-->
+        <p class="home-middle-full-width-container-description mb-5">Well-rounded Amenities That Complete Your Stay</p>
+        <div class="d-flex flex-row"><!--HOME MIDDLE FULL WIDTH CONTAINER DESCRIPTION ICONS CONTAINER1-->
+          <div class="family-icon-text-container mr-3"><!--one-->
+              <img class="family-friendly-icon" src="data:image/png;base64,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"/>
+              <p class="family-friendly-text">Family Friendly</p>
+          </div>
+          <div class="family-icon-text-container mr-3"><!--two-->
+            <img class="family-friendly-icon2" src="https://png.pngtree.com/png-vector/20191022/ourmid/pngtree-seo-box-icon-isolated-on-abstract-background-png-image_1848503.jpg"/>
+            <p class="family-friendly-text">Private Lawn</p>
+          </div>
+          <div class="family-icon-text-container mr-3"><!--three-->
+            <img class="family-friendly-icon2" src="data:image/png;base64,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"/>
+            <p class="family-friendly-text">Living Hall</p>
+          </div>
+          <div class="family-icon-text-container"><!--four-->
+            <img class="family-friendly-icon2" src="data:image/png;base64,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"/>
+            <p class="family-friendly-text">In-Room Dining</p>
+          </div>
+        </div>
+        <div class="d-flex flex-row mt-4"><!--HOME MIDDLE FULL WIDTH CONTAINER DESCRIPTION ICONS CONTAINER2-->
+          <div class="family-icon-text-container mr-3"><!--one-->
+              <img class="family-friendly-icon" src="data:image/png;base64,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"/>
+              <p class="family-friendly-text">Family Friendly</p>
+          </div>
+          <div class="family-icon-text-container mr-3"><!--two-->
+            <img class="family-friendly-icon2" src="https://png.pngtree.com/png-vector/20191022/ourmid/pngtree-seo-box-icon-isolated-on-abstract-background-png-image_1848503.jpg"/>
+            <p class="family-friendly-text">Private Lawn</p>
+          </div>
+          <div class="family-icon-text-container mr-3"><!--three-->
+            <img class="family-friendly-icon2" src="data:image/png;base64,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"/>
+            <p class="family-friendly-text">Living Hall</p>
+          </div>
+          <div class="family-icon-text-container"><!--four-->
+            <img class="family-friendly-icon2" src="data:image/png;base64,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"/>
+            <p class="family-friendly-text">In-Room Dining</p>
+          </div>
+        </div>
+        <div class="d-flex flex-row mt-4"><!--HOME MIDDLE FULL WIDTH CONTAINER DESCRIPTION ICONS CONTAINER3-->
+          <div class="family-icon-text-container mr-3"><!--one-->
+              <img class="family-friendly-icon" src="data:image/png;base64,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"/>
+              <p class="family-friendly-text">Family Friendly</p>
+          </div>
+          <div class="family-icon-text-container mr-3"><!--two-->
+            <img class="family-friendly-icon2" src="https://png.pngtree.com/png-vector/20191022/ourmid/pngtree-seo-box-icon-isolated-on-abstract-background-png-image_1848503.jpg"/>
+            <p class="family-friendly-text">Private Lawn</p>
+          </div>
+          <div class="family-icon-text-container mr-3"><!--three-->
+            <img class="family-friendly-icon2" src="data:image/png;base64,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"/>
+            <p class="family-friendly-text">Living Hall</p>
+          </div>
+          <div class="family-icon-text-container"><!--four-->
+            <img class="family-friendly-icon2" src="data:image/png;base64,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"/>
+            <p class="family-friendly-text">In-Room Dining</p>
+          </div>
+        </div><!--HOME MIDDLE FULL WIDTH CONTAINER DESCRIPTION ICONS CONTAINER3 END-->
+      </div><!--home-middle-full-width-container-description-container end-->
+    </div><!--HOME MIDDLE FULL WIDTH CONTAINER END-->
+
+    <h2 class="view-locations-heading">Read what your fellow travellers think about Skyla</h2>
+    <p class="reviews-rating-para"><span class="rating-span">4.8 ***** </span> 1,500 reviews on <span><a href="https://www.google.com/travel/hotels/entity/CgoIlPeT8ITbs8NZEAE/reviews?g2lb=2502548%2C4258168%2C4270442%2C4271060%2C4306835%2C4317915%2C4322823%2C4328159%2C4371334%2C4401769%2C4419364%2C4425458%2C4428793%2C4433754%2C4436127%2C4444000%2C4444972%2C4270859%2C4284970%2C4291517%2C4412693&hl=en&gl=in&un=1&rp=EJT3k_CE27PDWRCU95PwhNuzw1k4AkAASAHAAQI&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwiA66Hg78OIAxUAAAAAHQAAAAAQBA&ts=CAEaSQorEicyJTB4M2JjYjkxYThiZDhmMTAyZDoweDU5ODZjZWQ4NGUwNGZiOTQaABIaEhQKBwjoDxAJGA8SBwjoDxAJGBAYATICEAAqCQoFOgNJTlIaAA" 
+      target="_blank">Google reviews</a></span></p>
+      <div class="d-flex justify-content-center mt-4 mb-4"><!--CAROUSEL-->
+        <div class="w-80">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div  class="d-flex flex-row">          
+            <div>
+            <img class="d-block w-3 ms-dhoni" src="https://i.pinimg.com/736x/3a/a1/b2/3aa1b230e328d2a29aa729ad7f0ba582.jpg" alt="First slide">
+           </div>
+            <div class="ml-3">
+              <img class="five-star-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxau2l5XdeoHmeNqUcP-znx6gGlgFgf53qMw&s"/>
+              <p class="ms-dhoni-para">Rooms: Some say the rooms are spacious, clean, and comfortable</p>
+              <p class="email-text">MS Dhoni</p>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-row">
+            <div>
+            <img class="d-block w-3 ms-dhoni" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVu1-Uy-DRBVDaYQFcmH197c6ATJNBw0lsig&s/800x400?auto=yes&bg=777&fg=555&text=Second slide" alt="Second slide">
+            </div>
+            <div class="ml-3">
+              <img class="five-star-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxau2l5XdeoHmeNqUcP-znx6gGlgFgf53qMw&s"/>
+              <p class="ms-dhoni-para">Amenities: Some say the hotel has top-notch amenities, a great breakfast, and a convenient location 
+              </p>
+              <p class="email-text">Virat Kohli</p>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-row">
+            <div>
+            <img class="d-block w-3 ms-dhoni" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTECxDi_TW-sVZdpVgc8PhyIjeqw_rH3Dd0gA&s/800x400?auto=yes&bg=777&fg=555&text=Third slide" alt="Third slide">
+            </div>
+            <div class="ml-3">
+              <img class="five-star-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxau2l5XdeoHmeNqUcP-znx6gGlgFgf53qMw&s"/>
+              <p class="ms-dhoni-para">Friendly and helpful staff: "The staff at this hotel were incredibly welcoming and helpful throughout our stay". 
+              </p>
+              <p class="email-text">Prabhas</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="" aria-hidden="true"></span> <!--i remove the carousel-control-next-icon-->
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="" aria-hidden="true"></span> <!--i remove the carousel-control-next-icon-->
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div><!--CAROUSEL END-->
+
+  <div id="findStaySection" class="mb-5 pt-3"><!--Always a room for your plans and change of plans section-->
+  <h2 class="view-locations-heading">Always a room for your plans and change of plans</h2>
+  <div class="d-flex flex-row justify-content-center"> 
+    <div class="d-flex flex-column"> <!--your plans and change of plans section buttons-->
+      <button class="premier-button-width btn btn-outline-danger shadow p-3 mb-3 bg-white premier-button">
+        Premier Room
+      </button>
+      <button class="premier-button-width btn btn-outline-secondary bg-white p-3 mb-3 one-bedroom-button">
+        One-bedroom Suite
+      </button>
+      <button class="premier-button-width btn btn-outline-secondary bg-white p-3 mb-3 one-bedroom-button">
+        Two-bedroom Suite
+      </button>
+      <button class="premier-button-width btn btn-outline-secondary bg-white p-3 mb-3 one-bedroom-button">
+        Four-bedroom Ap...
+      </button>
+      <button class="premier-button-width btn btn-outline-secondary bg-white p-3 mb-3 one-bedroom-button">
+        Three-bedroom Apa...
+      </button>
+      <button class="premier-button-width btn btn-outline-secondary bg-white p-3 mb-3 one-bedroom-button">
+        Studio Exclusive
+      </button>
+      <button class="premier-button-width btn btn-outline-secondary bg-white p-3 mb-3 one-bedroom-button">
+        One-bedroom Suit...
+      </button>
+      <button class="premier-button-width btn btn-outline-secondary bg-white p-3 mb-3 one-bedroom-button">
+        Studio Supreme
+      </button>
+      <button class="premier-button-width btn btn-outline-secondary bg-white p-3 mb-3 one-bedroom-button">
+        Executive Room
+      </button>
+    </div><!--your plans and change of plans section buttons end-->
+    <div class="ml-4"><!--your plans and change of plans section Cards-->
+      <div class="your-plans-section-first-card d-flex flex-row"><!--first card-->
+        <div>
+          <img class="your-plans-section-first-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm4ygbkxy8reYZ7ecVrLoyg_H31m589pjq7g&s" />
+        </div>
+        <div class="ml-3 mt-2">
+          <p class="your-plans-section-first-card-para1">Skyla Studios & Suites | Executive Rooms</p>
+          <p class="your-plans-section-first-card-para2">Premier Room - Skyla...</p>
+          <p class="your-plans-section-first-card-para3">Book our well-furnished Premier rooms in Jubilee Hills Road No. 44 near Revanth Reddy's house. Service suite rooms in Hyderabad. Hotels In Jubilee Hills, Hot...</p>
+        </div>
+      </div>
+      <div class="your-plans-section-first-card d-flex flex-row"><!--second card-->
+        <div>
+          <img class="your-plans-section-first-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa21IpYyqdqTJx-TuH6BMJKTJqUdZIYodp3Q&s" />
+        </div>
+        <div class="ml-3 mt-2">
+          <p class="your-plans-section-first-card-para1">Skyla Studios & Suites | Executive Rooms</p>
+          <p class="your-plans-section-first-card-para2">Premier Room - Skyla...</p>
+          <p class="your-plans-section-first-card-para3">Serviced Apartments & Suites in Hitech City, premium rooms & Suites in Hitech City, Hotels In Hitech City, Hotels in Madhapur, Hotels in Gachibowli, Hotels near mind sp...</p>
+        </div>
+      </div>
+      <div class="your-plans-section-first-card d-flex flex-row"><!--third card-->
+        <div>
+          <img class="your-plans-section-first-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPFZj_7WqjneS3CQy5TpJ1WnEFDImDZ4ARFQ&s" />
+        </div>
+        <div class="ml-3 mt-2">
+          <p class="your-plans-section-first-card-para1">Skyla Studios & Suites | Executive Rooms</p>
+          <p class="your-plans-section-first-card-para2">Premier Room - Skyla...</p>
+          <p class="your-plans-section-first-card-para3">Hotels in Kondapur, premium rooms & Suites in Kondapur, Hotels In Hitech City, Hotels in Madhapur, Hotels in Gachibowli, Hotels near mind space, and Hotels in Hyderabad...</p>
+        </div>
+      </div>
+    </div><!--your plans and change of plans section Cards End-->
+    </div>
+  </div><!--Always a room for your plans and change of plans section end-->
+
+  <div class="mt-5 mb-5"><!--NEED HELP IN PICKING THE RIGHT STAY? SECTION-->
+    <h2 class="view-locations-heading">Need help in picking the right stay?</h2>
+    <p class="need-help-section-para">Let us help you with answering some frequently asked questions</p>
+    <div class="need-help-section-inputs-container mb-3"><!--INPUTS CONTAINER-->
+      
+      <div class="dropdown bg-input"><!--first-->
+        <button class="btn btn-light dropdown-toggle need-help-section-input1-container shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Why Should I Stay At Skyla?
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <p class="dropdown-item w-50">Our uniqueness is in combining the luxury of premium service <br/> and the warmth of a home.Skyla’s Serviced Apartments & Suites<br/> accommodate everyone from a business traveller to a family on<br/> vacation. And when it comes to making our guests comfortable<br/> and happy, we do it with pride.</p>
+        </div>
+      </div>
+      <div class="dropdown bg-input"><!--second-->
+        <button class="btn btn-light dropdown-toggle need-help-section-input1-container shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Why Is Skyla Better Than A Regular Hotel?
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <p class="dropdown-item w-50">It’s the format of our serviced apartments and suites. The room <br /> you will be staying in will be spacious, has a living room attached<br /> to it, and majority of our rooms comes with a kitchen to cook your<br /> own meals. Even if you were to compare only the price, a regular<br /> hotel of this standard could cost at least 30% more.</p>
+        </div>
+      </div>
+   
+  </div><!--INPUTS CONTAINER END-->
+    <div class="d-flex flex-row justify-content-center">
+      <div class="need-help-call-button d-flex flex-row">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound text-light" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </div>
+        <p class="need-help-call-text">Talk to our reservations team</p>
+      </div>
+
+    </div>
+    
+  </div><!--NEED HELP IN PICKING THE RIGHT STAY? SECTION END-->
+  </div><!--HOME MIDDLE DESCRIPTION CONTAINER END-->
+
+  <!--KONDAPUR DETAILS SECTION-->
+  <div id="kondapurSectionTwo" class="p-5 mb-5 d-none"> 
+    <h1 class="kondapur-heading">Serviced Apartments in Skyla Studios & Suites, Kothaguda, Kondapur Hyderabad</h1>
+    <p class="kondapur-para pt-3">Tucked away in the bustling cityscape of Hyderabad, Kondapur offers a tranquil escape amidst its urban charm. Known for its burgeoning residential communities and thriving commercial hubs, this neighborhood is a perfect blend of convenience and serenity. Explore nearby attractions such as the lush Botanical Gardens, the vibrant Forum Sujana Mall, and the historic Kondapur Archaeological Museum. Whether you're seeking relaxation or adventure, Kondapur provides an ideal base for your stay in Hyderabad.</p>
+  <hr class="w-25" />
+  <div class="container">
+    <div class="row">
+      <div class="col-6"><!--KONDAPUR PREMIER ROOM CARD-->
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckNogMdC4Mr1lPnOzcEpqVqnkQwjjIh_MUA&s" class="w-100 kondapur-premier-room-image1" />
+        <div class="d-flex flex-row pt-2">
+          <h1 class="kondapur-premier-room1-heading">Premier Room,
+            Skyla Studios & Suites, Kothaguda, Kondapur</h1>
+          <div class="w-25">
+            <p class="kondapur-premier-room1-price">$100 <br/>
+            <span class="validity">Per Night</span></p>
+          </div>
+        </div>
+      </div><!--KONDAPUR PREMIER ROOM CARD END-->
+      <div class="col-6"><!--KONDAPUR PREMIER ROOM CARD2-->
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_s5GKU9c4rJ8vJ_fC7O_nnfDkJ6_OpSRgA&s" class="w-100 kondapur-premier-room-image1" />
+        <div class="d-flex flex-row pt-2">
+          <h1 class="kondapur-premier-room1-heading">Studio Supreme,
+            Skyla Studios & Suites, Kothaguda, Kondapur</h1>
+          <div class="w-25">
+            <p class="kondapur-premier-room1-price">$120 <br/>
+            <span class="validity">Per Night</span></p>
+          </div>
+        </div>
+      </div><!--KONDAPUR PREMIER ROOM CARD2 END-->
+      <div class="col-6"><!--KONDAPUR PREMIER ROOM CARD3-->
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEy9HN1juERu0o2qLjaKv_ywthcbiZrPeKpA&s" class="w-100 kondapur-premier-room-image1" />
+        <div class="d-flex flex-row pt-2">
+          <h1 class="kondapur-premier-room1-heading">One-bedroom Suite Supreme,
+            Skyla Studios & Suites, Kothaguda, Kondapur</h1>
+          <div class="w-25">
+            <p class="kondapur-premier-room1-price">$150 <br/>
+            <span class="validity">Per Night</span></p>
+          </div>
+        </div>
+      </div><!--KONDAPUR PREMIER ROOM CARD3 END-->
+    </div>
+  </div>
+  </div><!--KONDAPUR SECTION END-->
+
+
+
+  <!--JUBILEE HILLS SECTION-->
+  <div id="jubileeHillsSectionTwo" class="p-5 mb-5 d-none">
+    <h1 class="kondapur-heading">Service Apartments in Jubilee Hills Hyderabad</h1>
+    <p class="kondapur-para pt-3">Located at the vibrant heart of Hyderabad, Jubilee Hills beckons with its unique blend of luxury and cultural richness. Renowned for its upscale shopping destinations, trendy cafes, and vibrant nightlife, this neighborhood offers an eclectic mix of experiences. Explore nearby attractions like the picturesque Durgam Cheruvu Lake, the iconic Peddamma Temple, and the bustling Banjara Hills. Whether indulging in gourmet dining or strolling through lush parks, Jubilee Hills invites you to immerse yourself in its dynamic ambiance.</p>
+    <hr class="w-25" />
+    <div class="container">
+      <div class="row">
+        <div class="col-6"><!--JUBILEE HILLS ROOM CARD-->
+          <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckNogMdC4Mr1lPnOzcEpqVqnkQwjjIh_MUA&s" class="w-100 kondapur-premier-room-image1" />
+          <div class="pt-2">
+            <h1 class="kondapur-premier-room1-heading">
+              Skyla Studios & Suites, Jubilee Hills, Road # 44</h1>
+          </div>
+          <div ><!--jubileeHillsButtons-->
+            <div class="d-flex flex-row">
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">Premier Room</a>
+              </div>
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">Studio Exclusive</a>
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">Studio Supreme</a>
+              </div>
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">One-bedroom Suite</a>
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">Two-bedroom Suite</a>
+              </div>
+            </div>
+            </div>
+        </div><!--JUBILEE HILLS ROOM CARD END-->
+        <div class="col-6"><!--JUBILEE HILSS ROOM CARD2-->
+          <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_s5GKU9c4rJ8vJ_fC7O_nnfDkJ6_OpSRgA&s" class="w-100 kondapur-premier-room-image1" />
+          <div class="pt-2">
+            <h1 class="kondapur-premier-room1-heading">Aptly Premium Serviced Apartments, Lotus Pond, Jubilee Hills</h1>
+          </div>
+          <div><!--jubileeHillsButtons-->
+            <div class="d-flex flex-row">
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">Executive Room</a>
+              </div>
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">Studio Exclusive</a>
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">Three-bedroom Apartment</a>
+              </div>
+              <div class="jubilee-hills-button-style w-50 m-1">
+                <a href="#" class="text-light">Four-bedroom Apartment</a>
+              </div>
+            </div>
+            </div>
+        </div><!--JUBILEE HILLS ROOM CARD2 END-->
+        
+      </div>
+    </div>
+  </div><!--JUBILEE HILLS SECTION END-->
+
+
+
+
+<!--HITECH-CITY DETAILS SECTION-->
+<div id="hitechCitySectionTwo" class="p-5 mb-5 d-none"> 
+  <h1 class="kondapur-heading">Serviced Apartments in Skyla Studios & Suites, Hitech-City Hyderabad</h1>
+  <p class="kondapur-para pt-3">Amidst the energetic cityscape of Hyderabad, discover the pulsating heart of technology and commerce in Hitech City, Madhapur. Embodying innovation and progress, this area is home to leading IT firms, upscale shopping havens, and a plethora of dining delights. Explore nearby landmarks like the renowned Inorbit Mall, the cultural oasis of Shilparamam, and the iconic Cyber Towers. Whether your visit is for business or leisure, Hitech City promises a vibrant blend of convenience and excitement throughout your stay.
+    Hotels in Hitech City, Service Apartments in Hitech City, Hotels In Madhapur, Hotels in Hyderabad, Hotel Reservations in Hyderabad, Hotels in Hyderabad in India, Hotels in Gachibowli. Service Apartments In Hyderabad, Service Apartments in Madhapur, Service Apartments in Hitech City Hyderabad. Hotels In Hitech City, Hotels in Madhapur, Hotels in Gachibowli, Hotels near mind space, Hotels in Hyderabad.</p>
+<hr class="w-25" />
+<div class="container">
+  <div class="row">
+    <div class="col-6"><!--HITECH-CITY PREMIER ROOM CARD-->
+      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckNogMdC4Mr1lPnOzcEpqVqnkQwjjIh_MUA&s" class="w-100 kondapur-premier-room-image1" />
+      <div class="d-flex flex-row pt-2">
+        <h1 class="kondapur-premier-room1-heading">Premier Room,
+          Skyla Studios & Suites, Hitech-City</h1>
+        <div class="w-25">
+          <p class="kondapur-premier-room1-price">$100 <br/>
+          <span class="validity">Per Night</span></p>
+        </div>
+      </div>
+    </div><!--HITECH-CITY PREMIER ROOM CARD END-->
+    <div class="col-6"><!--HITECH-CITY PREMIER ROOM CARD2-->
+      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_s5GKU9c4rJ8vJ_fC7O_nnfDkJ6_OpSRgA&s" class="w-100 kondapur-premier-room-image1" />
+      <div class="d-flex flex-row pt-2">
+        <h1 class="kondapur-premier-room1-heading">Studio Exclusive ,
+          Skyla Studios & Suites, Hitech-City</h1>
+        <div class="w-25">
+          <p class="kondapur-premier-room1-price">$120 <br/>
+          <span class="validity">Per Night</span></p>
+        </div>
+      </div>
+    </div><!--HITECH-CITY PREMIER ROOM CARD2 END-->
+    <div class="col-6"><!--HITECH-CITY PREMIER ROOM CARD3-->
+      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEy9HN1juERu0o2qLjaKv_ywthcbiZrPeKpA&s" class="w-100 kondapur-premier-room-image1" />
+      <div class="d-flex flex-row pt-2">
+        <h1 class="kondapur-premier-room1-heading">One-bedroom Suite,
+          Skyla Studios & Suites, Hitech-City</h1>
+        <div class="w-25">
+          <p class="kondapur-premier-room1-price">$150 <br/>
+          <span class="validity">Per Night</span></p>
+        </div>
+      </div>
+    </div><!--HITECH-CITY PREMIER ROOM CARD4 END-->
+    <div class="col-6"><!--HITECH-CITY PREMIER ROOM CARD3-->
+      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEy9HN1juERu0o2qLjaKv_ywthcbiZrPeKpA&s" class="w-100 kondapur-premier-room-image1" />
+      <div class="d-flex flex-row pt-2">
+        <h1 class="kondapur-premier-room1-heading">One-bedroom Suite Supreme,
+          Skyla Studios & Suites, Hitech-City</h1>
+        <div class="w-25">
+          <p class="kondapur-premier-room1-price">$150 <br/>
+          <span class="validity">Per Night</span></p>
+        </div>
+      </div>
+    </div><!--HITECH-CITY PREMIER ROOM CARD4 END-->
+  </div>
+</div>
+</div><!--HITECH-CITY SECTION END-->
+
+
+
+
+<!--BANJARA HILLS SECTION-->
+<div id="banjaraHillsSectionTwo" class="p-5 mb-5 d-none">
+  <h1 class="kondapur-heading">Service Apartments in Banjara Hills Hyderabad</h1>
+  <p class="kondapur-para pt-3">Nestled amidst the urban charm of Hyderabad, Banjara Hills entices with its blend of modernity and tradition. Renowned for its upscale boutiques, bustling cafes, and serene parks, this vibrant district offers a tapestry of experiences. Explore the nearby iconic landmarks such as the opulent Golconda Fort, the tranquil KBR National Park, and the lively Jubilee Hills. Immerse yourself in the rich culture and dynamic atmosphere of Banjara Hills, where every corner unveils a new adventure.</p>
+  <hr class="w-25" />
+  <div class="container">
+    <div class="row">
+      <div class="col-6"><!--BANJARA HILLS ROOM CARD-->
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckNogMdC4Mr1lPnOzcEpqVqnkQwjjIh_MUA&s" class="w-100 kondapur-premier-room-image1" />
+        <div class="pt-2">
+          <h1 class="kondapur-premier-room1-heading">
+            Aptly Premium Serviced Apartments, Road #11, Banjara Hills</h1>
+        </div>
+        <div ><!--banjaraHillsButtons-->
+          <div class="d-flex flex-row">
+            <div class="jubilee-hills-button-style w-50 m-1">
+              <a href="#" class="text-light">Three-bedroom Apartment</a>
+            </div>
+            <div class="jubilee-hills-button-style w-50 m-1">
+              <a href="#" class="text-light">Executive Room</a>
+            </div>
+          </div>
+          </div>
+      </div><!--BANJARA HILLS ROOM CARD END-->
+      
+    </div>
+  </div>
+</div><!--BANJARA HILLS SECTION END-->
+
+
+
+
+<!--GACHIBOWLI SECTION-->
+<div id="gachibowliSectionTwo" class="p-5 mb-5 d-none">
+  <h1 class="kondapur-heading">Service Apartments in Gachibowli Hyderabad</h1>
+  <p class="kondapur-para pt-3">Situated in the bustling city of Hyderabad, Gachibowli stands out as a modern hub of innovation and leisure. Known for its thriving IT industry, this area boasts world-class amenities alongside serene green spaces. Explore nearby landmarks such as the majestic Osman Sagar Lake, the iconic Ramoji Film City, and the vibrant Cyber Towers. Whether you're here for business or leisure, Gachibowli offers a perfect blend of convenience and relaxation for your stay.</p>
+  <hr class="w-25" />
+  <div class="container">
+    <div class="row">
+      <div class="col-6"><!--GACHIBOWLI ROOM CARD-->
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckNogMdC4Mr1lPnOzcEpqVqnkQwjjIh_MUA&s" class="w-100 kondapur-premier-room-image1" />
+        <div class="pt-2">
+          <h1 class="kondapur-premier-room1-heading">
+            Aptly Premium Serviced Apartments, DLF CyberCity, Gachibowli</h1>
+        </div>
+        <div ><!--gachibowliButtons-->
+          <div class="d-flex flex-row">
+            <div class="jubilee-hills-button-style w-50 m-1">
+              <a href="#" class="text-light">Executive Room</a>
+            </div>
+          </div>
+          </div>
+      </div><!--GACHIBOWLI ROOM CARD END-->
+      
+    </div>
+  </div>
+</div><!--GACHIBOWLI SECTION END-->
+
+
+
+<!--WHY SKYLA ABOUT SKYLA-->
+<div id="aboutSkylaSection" class="mb-5 d-none">
+  <div class="d-flex flex-row p-5">
+    <div onclick="homeIconInAboutSkyla()"><!--ABOUT SKYLA HONE ICON-->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+      </svg>
+    </div>
+    <div class="mr-3 ml-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+      </svg>
+    </div>
+    <p>About Skyla</p>
+  </div>
+
+  <div class="about-skyla-find-locations-bg-container d-flex flex-row pr-3">
+    <div>
+      <div class="pt-5 pl-5 pb-5"> 
+        <h1 class="about-skyla-find-locations-heading">Find a Skyla Apart hotels and suites in these four locations</h1>
+        <div class="about-skyla-locations-card d-flex flex-row"><!--LOCATIONS CARD-->
+          <div onclick="locationKondapur()" id="locationKondapur" class="box active"><!--location jubilee Hills -->
+            <div><!--location icon-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+            </div>
+            <p>Kondapur</p>
+          </div><!--location jubilee Hills end-->
+          <div onclick="locationJubileeHills()" id="locationJubileeHills" class="box"><!--location jubilee Hills -->
+            <div><!--location icon-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+            </div>
+            <p>Jubilee Hills</p>
+          </div><!--location jubilee Hills end-->
+          <div onclick="locationHitechCity()" id="locationHitechCity" class="box"><!--location hitech-city -->
+            <div><!--location icon-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+            </div>
+            <p>Hitech City</p>
+          </div><!--location hitech-city end-->
+          <div onclick="locationBanjaraHills()" id="locationBanjaraHills" class="box"><!--location banjara hills -->
+            <div><!--location icon-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+            </div>
+            <p>Banjara Hills</p>
+          </div><!--location banjara-hills end-->
+        </div><!--LOCATIONS CARD END-->
+        <div onclick="locationGachibowli()" class="about-skyla-locations-card d-flex flex-row">
+          <div class="box"><!--location gachibowli -->
+            <div><!--location icon-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+            </div>
+            <p>Gachibowli</p>
+            </div>
+          </div><!--location gachibowli end-->
+        </div>
+      <!--</div>-->
+      <a id="kondapurLocationLink" href="" class="text-light pl-5">Skyla Studios & Suites, Kothaguda, Kondapur</a>
+      <a id="jubileeHillsLocationLink" href="" class="d-none text-light pl-5">Aptly Premium Serviced Apartments, Lotus Pond, Jubilee Hills<br/>
+        <span class="pl-5">Skyla Studios & Suites, Jubilee Hills, Road # 44</span></a>
+      <a id="hitechCityLocationLink" href="" class="d-none text-light pl-5">Skyla Studios & Suites, Hitech-City</a>
+      <a id="banjaraHillsLocationLink" href="" class="d-none text-light pl-5">Aptly Premium Serviced Apartments, Road #11, Banjara Hills</a>
+      <a id="gachibowliLocationLink" href="" class="d-none text-light pl-5">Aptly Premium Serviced Apartments, DLF CyberCity, Gachibowli</a>
+    </div>
+    <!--<div>-->
+    <img class="about-skyla-location-bg-image" src="https://i.etsystatic.com/23287991/r/il/c47b27/2415520491/il_570xN.2415520491_lher.jpg">
+  
+  </div>
+
+  <div class="p-5 d-flex flex-row"><!--why skyla about skyla middle 2nd section-->
+    <div class="w-50 "> <!--left cards container-->
+    <div class="d-flex flex-row justify-content-center"> <!--left first two cards container-->
+      <div class="mr-5 text-center w-20">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-person text-danger mb-2" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </svg>
+        <p>Service On Request</p>
+      </div>
+      <div class="text-center w-25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-geo-alt text-danger mb-2" viewBox="0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        </svg>
+        <p>Located Right In The Center</p>
+      </div>
+    </div><!--left first two cards container end-->
+    <div class="d-flex flex-row justify-content-center mt-4"> <!--left second two cards container -->
+      <div class="mr-5 text-center w-25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-aspect-ratio text-danger mb-2" viewBox="0 0 16 16">
+          <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"/>
+          <path d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0z"/>
+        </svg>
+        <p>Uncompromising
+          Space</p>
+      </div>
+      <div class="text-center w-25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-people-fill text-danger mb-2" viewBox="0 0 16 16">
+          <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+        </svg>
+        <p>Corporate
+          Booking</p>
+      </div>
+    </div><!--left second two cards container end-->
+  </div> <!--left cards container end-->
+  <div class="w-50 pr-5 pt-3"><!--right description container-->
+    <h1 class="text-danger">Make yourself at home when staying in Hyderabad!
+    </h1>
+    <p>If there is anything that could make you comfortable, it's the warmth of a home. We at Skyla are committed to ensure our guests – though staying in a new city, feel nothing strange about living at their home away from home.</p>
+  </div><!--right description container end-->
+  </div><!--why skyla about skyla middle 2nd section end-->
+
+  <div class="p-5 mt-5 mb-5"><!--why skyla about skyla middle 3rd section -->
+    <h1 class="text-center text-danger">
+      We are the proud hosts of over 350,000+ ROOM NIGHTS since we opened our doors to the world
+    </h1>
+    <div class="mt-5 d-flex flex-row justify-content-center"><!--cards container-->
+      <div class="why-skyla-about-skyla-3rd-section-card-container shadow mr-3"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-house text-danger" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+        </svg>
+        <h4 class="bold mt-2">Choice of Service</h4>
+        <p>From One-bedroom Studio to a 4BHK Apartment, choose from a wide-range of room-formats that are tailored to meet your purpose.</p>
+      </div>
+      <div class="why-skyla-about-skyla-3rd-section-card-container shadow ml-3"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-emoji-smile text-danger" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+        </svg>
+        <h4 class="bold mt-2">Quality of Service</h4>
+        <p>Be it our property Banjara Hills or the one in Gachibowli, the quality of service remains consistent and adheres to the highest standards.</p>
+      </div>
+    </div><!--cards container end-->
+  </div><!--why skyla about skyla middle 3rd section end-->
+
+  <div class="why-skyla-about-skyla-4th-section-container d-flex flex-row"><!--why skyla about skyla middle 4th section-->
+    <img class="our-story-image" src="https://images3.alphacoders.com/133/1338701.png" />
+    <div class="pr-5 pl-5 pt-4">
+      <h2 class="text-light">Our Story</h2>
+      <p class="our-story-description">
+        The city of Hyderabad has been a thriving global destination for businesses, medical tourists, and tourism at large. However, travel also evolved from royal expeditions to purpose-driven journeys; and we wanted to fill these journeys with warmth and comfort. <br/><br/>
+        Starting in 2010 with one serviced apartment, Skyla today operates across 10 properties in the city, and has completed over 1 million room nights so far. The mark of our achievement continues to be our ‘Home Away From Home’ experiences offered to guests in the city for business, leisure, or medical purposes.<br/><br/>
+        To offer an edge over the traditional hotels, Skyla apart hotels and suites are spacious, are located within a neighbourhood, and are packed with top-of-the-line amenities that makes living at Skyla convenient.<br/><br/>
+      </p>
+    </div>
+  </div><!--why skyla about skyla middle 4th section end-->
+  <div class="p-5 mt-5 mb-5 text-center"><!--why skyla about skyla middle 5th section-->
+    <h2 class="color mb-4" >SOME OF OUR EXCLUSIVE AMENITIES INCLUDE</h2>
+    <p>From a one-day business trip to a year-long project, our amenities go with your life.</p>
+    <div class="d-flex flex-row w-100 mt-5">
+      <div class="w-25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-cup-hot-fill text-danger mb-3" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5"/>
+          <path d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8"/>
+        </svg>
+        <h5>Complimentary Breakfast</h5>
+      </div>
+      <div class="w-25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-fire text-danger mb-3" viewBox="0 0 16 16">
+          <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+        </svg>
+        <h5>Kitchen</h5>
+      </div>
+      <div class="w-25">
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-house-heart text-danger mb-3" viewBox="0 0 16 16">
+        <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982"/>
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+      </svg>
+        <h5>Dining Room</h5>
+      </div>
+      <div class="w-25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-p-circle text-danger mb-3" viewBox="0 0 16 16">
+          <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.5 4.002h2.962C10.045 4.002 11 5.104 11 6.586c0 1.494-.967 2.578-2.55 2.578H6.784V12H5.5zm2.77 4.072c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97z"/>
+        </svg>
+        <h5>Parking</h5>
+      </div>
+    </div>
+  </div><!--why skyla about skyla middle 5th section end-->
+  <div class="mt-5 p-5 text-center"> <!--why skyla about skyla middle 6th section-->
+    
+    <h2 class="color mb-4">READ WHAT YOUR FELLOW TRAVELLERS THINK ABOUT SKYLA</h2>
+    <h4>Google Reviews</h4>
+    <p class="reviews-rating-para"><span class="rating-span">4.8 ***** </span> 1,500 reviews on <span><a href="https://www.google.com/travel/hotels/entity/CgoIlPeT8ITbs8NZEAE/reviews?g2lb=2502548%2C4258168%2C4270442%2C4271060%2C4306835%2C4317915%2C4322823%2C4328159%2C4371334%2C4401769%2C4419364%2C4425458%2C4428793%2C4433754%2C4436127%2C4444000%2C4444972%2C4270859%2C4284970%2C4291517%2C4412693&hl=en&gl=in&un=1&rp=EJT3k_CE27PDWRCU95PwhNuzw1k4AkAASAHAAQI&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwiA66Hg78OIAxUAAAAAHQAAAAAQBA&ts=CAEaSQorEicyJTB4M2JjYjkxYThiZDhmMTAyZDoweDU5ODZjZWQ4NGUwNGZiOTQaABIaEhQKBwjoDxAJGA8SBwjoDxAJGBAYATICEAAqCQoFOgNJTlIaAA" 
+      target="_blank">Google reviews</a></span></p>
+      <div class="d-flex justify-content-center mt-4 mb-4"><!--CAROUSEL-->
+        <div >
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner shadow">
+          <div class="carousel-item active">
+            <div  class="d-flex flex-row ">          
+            <div>
+            <img class="d-block ml-2 ms-dhoni" src="https://i.pinimg.com/736x/3a/a1/b2/3aa1b230e328d2a29aa729ad7f0ba582.jpg" alt="First slide">
+            <p class="email-text">MS Dhoni</p>
+            <img class="five-star-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxau2l5XdeoHmeNqUcP-znx6gGlgFgf53qMw&s"/>
+          </div>
+            <div class="d-flex flex-column justify-content-center pr-2">
+              <p>Rooms: Some say the rooms are spacious, clean, and comfortable
+              </p>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item shadow">
+            <div class="d-flex flex-row">
+            <div>
+            <img class="d-block w-3 ms-dhoni ml-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVu1-Uy-DRBVDaYQFcmH197c6ATJNBw0lsig&s/800x400?auto=yes&bg=777&fg=555&text=Second slide" alt="Second slide">
+            <p class="email-text mr-3">Virat Kohli</p>
+            <img class="five-star-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxau2l5XdeoHmeNqUcP-znx6gGlgFgf53qMw&s"/>
+          </div>
+            
+            <div class="d-flex flex-column justify-content-center pr-2">
+              <p class="ms-dhoni-para">Amenities: Some say the hotel has top-notch amenities, a great breakfast, and a convenient location 
+              </p>
+            </div>
+              
+              
+            </div>
+            </div>
+          
+          <div class="carousel-item shadow">
+            <div class="d-flex flex-row">
+            <div>
+            <img class="d-block w-3 ms-dhoni ml-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTECxDi_TW-sVZdpVgc8PhyIjeqw_rH3Dd0gA&s/800x400?auto=yes&bg=777&fg=555&text=Third slide" alt="Third slide">
+            <p class="email-text mr-3">Prabhas</p>
+            <img class="five-star-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxau2l5XdeoHmeNqUcP-znx6gGlgFgf53qMw&s"/>
+          </div>
+            <div class="d-flex flex-column justify-content-center"> 
+              
+              <p class="ms-dhoni-para">Friendly and helpful staff: "The staff at this hotel were incredibly welcoming and helpful throughout our stay". 
+              </p>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="" aria-hidden="true"></span> <!--i remove the carousel-control-next-icon-->
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="" aria-hidden="true"></span> <!--i remove the carousel-control-next-icon-->
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    
+  </div><!--CAROUSEL END-->
+
+  </div><!--why skyla about skyla middle 6th section end-->
+</div>
+<!--WHY SKYLA ABOUT SKYLA END-->
+
+
+
+
+
+<!--HOME PAGE BOTTOM SECTION ABOUT SKYLA-->
+  <div id="homeSectionThree" class="home-page-about-skyla-card ">
+    <div class="container">
+    <div class="row">
+    <div class="col-6"><!--About Skyla Info-->
+      <p class="home-page-about-skyla-para1">About Skyla</p>
+      <p class="home-page-about-skyla-para2">With purposefully designed rooms, Skyla serves business, corporate, and leisure travelers visiting Hyderabad for short stays. The studios and suites are equipped with fully functional kitchenettes and laundry facilities to make living away from home or relocation comfortable. Skyla’s Studios & Suites are located in prime neighborhoods of Jubilee Hills, Madhapur, and Kondapur.</p>
+      <p class="home-page-about-skyla-para3">Skyla Hospitality Partner with us Careers Blog Contact us</p>
+    </div>
+    <div class="col-2"><!--Locations-->
+      <p class="home-page-about-skyla-para1">Locations</p>
+      <p class="home-page-about-skyla-para2">Kondapur</p>
+      <p class="home-page-about-skyla-para2">Jubilee Hills</p>
+      <p class="home-page-about-skyla-para2">Hitech City</p>
+      <p class="home-page-about-skyla-para2">Banjara Hills</p>
+      <p class="home-page-about-skyla-para2">Gachibowli</p>
+    </div>
+    <div class="col-2"><!--Type of Place-->
+      <p class="home-page-about-skyla-para1">Type of Place</p>
+      <p class="home-page-about-skyla-para2">Premier Room</p>
+      <p class="home-page-about-skyla-para2">One-bedroom Suite</p>
+      <p class="home-page-about-skyla-para2">Two-bedroom Suite</p>
+      <p class="home-page-about-skyla-para2">Three-bedroom Apartment</p>
+      <p class="home-page-about-skyla-para2">Four-bedroom Apartment</p>
+    </div>
+    <div class="col-2 mt-4">
+      <p class="home-page-about-skyla-para3">Follow Us</p>
+      <div class="d-flex flex-row space-between">
+        <div><!--Facebook icon-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook text-light" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg>
+        </div>
+        <div><!--Instagram icon-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram text-light" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>
+        </div>
+        <div><!--Linked In-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin text-light" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+        </div>
+        <div><!--YouTube-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube text-light" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div><!--HOME PAGE BOTTOM SECTION ABOUT SKYLA END-->
+  
+    </div><!--HOME BG CONTAINER END-->
+   
+  
+  
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="dynamic.js"></script>
+</body>
+</html>
